@@ -1,0 +1,20 @@
+// Rules for the practice platform's collection only.
+// If this Firebase project already has rules (e.g. another app), ADD the match block
+// below inside your existing `match /databases/{database}/documents { ... }`
+// instead of pasting over the whole file — Firestore keeps one ruleset per database.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /practiceAttempts/{id} {
+      // Students don't sign in, so reads are open to anyone who knows the site.
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasAll(['testId', 'student', 'startedAt', 'status'])
+                    && request.resource.data.status == 'in-progress';
+      // An attempt can be updated until it is submitted; after that it is locked.
+      allow update: if resource.data.status == 'in-progress'
+                    && request.resource.data.testId == resource.data.testId
+                    && request.resource.data.startedAt == resource.data.startedAt;
+      allow delete: if false;
+    }
+  }
+}
