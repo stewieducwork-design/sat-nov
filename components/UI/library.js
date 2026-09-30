@@ -11,7 +11,8 @@
   const band = (cls, ...kids) => h("section", { class: "band " + cls }, h("div", { html: Art.wave(), class: "band__edge" }), h("div", { class: "band__in" }, ...kids));
 
   const card = (t, i) => {
-    const num = (String(t.title).match(/\d+/) || [String(tests.length - i)])[0];
+    // Big label on the card: manifest "cover" if set, else digits in the title, else list position.
+    const num = t.cover || (String(t.title).match(/\d+/) || [String(tests.length - i)])[0];
     const meta = [t.questions ? `${t.questions} questions` : null, t.minutes ? `${t.minutes} min` : null].filter(Boolean).join(", ");
     const resume = inProgress(t);
     return h("li", { class: "tcard" + (i === 0 ? " tcard--new" : "") },
