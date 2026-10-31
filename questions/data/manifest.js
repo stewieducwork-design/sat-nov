@@ -26,6 +26,18 @@ window.TEST_MANIFEST = [
   { id: "r07c-coe-graphs", file: "r07c-coe-graphs.js", title: "Reading: Graphs 55–81", description: "Command of Evidence: Quantitative (graphs & tables), part 3", questions: 26, minutes: 39, cover: "G3" },
   { id: "r07d-coe-graphs", file: "r07d-coe-graphs.js", title: "Reading: Graphs 82–108", description: "Command of Evidence: Quantitative (graphs & tables), part 4", questions: 27, minutes: 40, cover: "G4" },
 
+  // SAT Reading: Words in Context
+  { id: "wic-a", file: "wic-a.js", title: "Words in Context — Set A", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WA" },
+  { id: "wic-b", file: "wic-b.js", title: "Words in Context — Set B", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WB" },
+  { id: "wic-c", file: "wic-c.js", title: "Words in Context — Set C", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WC" },
+  { id: "wic-d", file: "wic-d.js", title: "Words in Context — Set D", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WD" },
+  { id: "wic-e", file: "wic-e.js", title: "Words in Context — Set E", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WE" },
+  { id: "wic-f", file: "wic-f.js", title: "Words in Context — Set F", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WF" },
+  { id: "wic-g", file: "wic-g.js", title: "Words in Context — Set G", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WG" },
+  { id: "wic-h", file: "wic-h.js", title: "Words in Context — Set H", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WH" },
+  { id: "wic-i", file: "wic-i.js", title: "Words in Context — Set I", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WI" },
+  { id: "wic-j", file: "wic-j.js", title: "Words in Context — Set J", description: "SAT Reading: Words in Context | 4 Easy · 8 Medium · 8 Hard", questions: 20, minutes: 20, cover: "WJ" },
+
   // SAT Grammar (sections grouped by skill)
   { id: "g01-boundaries", file: "g01-boundaries.js", title: "Grammar: Boundaries", description: "Standard English Conventions: sentence boundaries & punctuation", questions: 251, minutes: 146, cover: "BD" },
   { id: "g02-form-structure-sense", file: "g02-form-structure-sense.js", title: "Grammar: Form, Structure, and Sense", description: "Standard English Conventions: agreement, verbs, pronouns, modifiers", questions: 186, minutes: 101, cover: "FS" },
